@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .event-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.event-card {
+    background-color: rgba(31, 31, 31, 0.9);
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.3);
+}
+
+.event-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.event-info {
+    color: #b3b3b3;
+}
+
+.buy-button {
+    margin-top: 16px;
+    background-color: red;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.buy-button:hover {
+    background-color: darkred;
+}
+
